@@ -10,15 +10,15 @@ function solve(num1, num2, num3) {
         secondPosition = num2;
         thirdPosition = num3;
     }
-    if (num2 > firstPosition) {
-        firstPosition = num2;
-        secondPosition = num1;
-        thirdPosition = num3;
-    }
     if (num3 > firstPosition) {
         firstPosition = num3;
         secondPosition = num1;
         thirdPosition = num2;
+    }
+     if (num2 > firstPosition) {
+        firstPosition = num2;
+        secondPosition = num1;
+        thirdPosition = num3;
     }
  
     if (thirdPosition > secondPosition) {
