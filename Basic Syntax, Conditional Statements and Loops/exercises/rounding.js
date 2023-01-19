@@ -1,8 +1,9 @@
-function rounding (n, m) {
+function rounding (number, precision) {
+    
+    if (precision > 15){
+        precision = 15;
+    }
 
-    let num = n;
-
-    console.log(parseFloat(num).toFixed(m));
-
+    console.log(parseFloat(number.toFixed(precision)));
 }
 rounding([3.1415926535897932384626433832795, 2])
