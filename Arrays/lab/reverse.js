@@ -1,13 +1,14 @@
 function reverseArray (n, inputArr) {
+    
+let sum = [];
 
-let arr = [];
 for (let i = 0; i < n; i++) {
-arr.push(inputArr);
+sum.push(inputArr[i]);
 }
-let output = '';
-for (let i = arr.length-1; i>=0; i--) {
-output+= arr;
+
+let reverse = sum.reverse();
+let final = reverse.join(" ");
+
+console.log(final);
 }
-console.log(output);
-}
-reverseArray([3,[10, 20, 30, 40, 50]])
+reverseArray(3, [10, 20, 30, 40, 50])
