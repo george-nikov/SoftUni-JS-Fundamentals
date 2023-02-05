@@ -1,12 +1,16 @@
 function addAndSubtract(a, b, c) {
 
-    sum1 = a + b;
-
-    function subtract(sum1) {
-        let total = sum1 - c;
-        console.log(total);
+    function sumFunction (a,b){
+        return a + b;
     }
+
+    function subtractFunction (a,b) {
+        return a - b;
+    }
+
+    let sum = sumFunction(a,b)
+    let subtract = subtractFunction(sum,c)
     return subtract;
 
 }
-addAndSubtract([23, 6, 10])
+console.log(addAndSubtract(23, 6, 10))
