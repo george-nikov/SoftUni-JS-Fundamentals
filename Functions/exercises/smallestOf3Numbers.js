@@ -7,6 +7,7 @@ smallest = b
 if (b > c && a > c) {
 smallest = c;
 }
-console.log(smallest);
+
+return smallest;
 }
-smallestNumber([2,5,3])
+smallestNumber(2,5,3)
